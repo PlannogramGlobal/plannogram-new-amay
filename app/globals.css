@@ -12,6 +12,7 @@
     --font-sans: var(--font-sans)
   }
   :root {
+    --font-sans: var(--font-poppins);
 
     --background: oklch(1 0 0);
 
@@ -42,6 +43,7 @@
     --accent-foreground: oklch(0.205 0 0);
 
     --destructive: oklch(0.577 0.245 27.325);
+    --destructive-foreground: oklch(0.985 0 0);
 
     --border: oklch(0.922 0 0);
 
@@ -60,6 +62,7 @@
     --chart-5: oklch(0.269 0 0);
 
     --radius: 0.625rem;
+    --radius-md: var(--radius);
 
     --sidebar: oklch(0.985 0 0);
 
@@ -108,6 +111,7 @@
     --accent-foreground: oklch(0.985 0 0);
 
     --destructive: oklch(0.704 0.191 22.216);
+    --destructive-foreground: oklch(0.985 0 0);
 
     --border: oklch(1 0 0 / 10%);
 
@@ -142,7 +146,11 @@
     --sidebar-ring: oklch(0.556 0 0)
   }
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
+  }
+  *:focus-visible {
+    outline: 2px solid color-mix(in oklch, var(--ring) 50%, transparent);
+    outline-offset: 2px;
   }
   body {
     @apply bg-background text-foreground;
@@ -150,4 +158,73 @@
   html {
     @apply font-sans;
   }
+}
+
+/* Typewriter cursor — CSS only so SSR/CSR markup matches */
+@keyframes typewriter-cursor-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  animation: typewriter-cursor-blink 1s step-end infinite;
+}
+
+/* Neon glow title (hero-1 / GlowHero) */
+@keyframes glow-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glow-hero-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-hero-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 100px;
+  opacity: 0.75;
+  background: linear-gradient(90deg, #00cfff, #a600ff, #ff006e, #ff8800);
+  background-size: 200% 200%;
+  filter: blur(20px) brightness(0.85);
+  animation: glow-gradient-shift 12s ease-in-out infinite;
+}
+
+.glow-hero-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  background: linear-gradient(90deg, #00cfff, #a600ff, #ff006e, #ff8800);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: plus-lighter;
+  filter: blur(3px) brightness(1.25);
+  animation: glow-gradient-shift 12s ease-in-out infinite;
 }

@@ -1,7 +1,23 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  // Dev-only overlay (“Static” / ISR status). Not shown in production builds.
+  devIndicators: { appIsrStatus: false },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
+    ],
+  },
+  transpilePackages: [
+    "three",
+    "three-stdlib",
+    "@react-three/fiber",
+    "@react-three/drei",
+  ],
+}
 
-export default nextConfig;
+export default nextConfig
