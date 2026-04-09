@@ -105,11 +105,11 @@ export function LandingEvents() {
             arrowHoverBackground: "#00a6fb",
           }}
           fontSizes={{
-            name: "clamp(1.4rem, 3vw, 2rem)",
-            designation: "clamp(0.95rem, 1.9vw, 1.1rem)",
-            quote: "clamp(0.875rem, 1.4vw, 1rem)",
+            name: "clamp(1.15rem, 4.2vw, 2rem)",
+            designation: "clamp(0.8rem, 2.5vw, 1.1rem)",
+            quote: "clamp(0.8rem, 2.8vw, 1rem)",
           }}
-          className="max-w-5xl md:max-w-6xl lg:max-w-7xl"
+          className="max-w-[100%] sm:max-w-5xl md:max-w-6xl lg:max-w-7xl"
         />
       </div>
     </section>

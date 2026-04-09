@@ -9,10 +9,9 @@ import {
   useState,
 } from "react"
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
-import { Center, Html, useGLTF } from "@react-three/drei"
+import { Center, useGLTF } from "@react-three/drei"
 import * as THREE from "three"
 import { RectAreaLightUniformsLib } from "three/examples/jsm/lights/RectAreaLightUniformsLib.js"
-import { Loader2 } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -328,16 +327,7 @@ export function GlbOrbitViewer({
             lerp={areaLightLerp}
           />
 
-          <Suspense
-            fallback={
-              <Html center>
-                <Loader2
-                  className="size-8 animate-spin text-white opacity-80"
-                  aria-hidden
-                />
-              </Html>
-            }
-          >
+          <Suspense fallback={null}>
             <Model src={modelSrc} yawSpeed={modelYawSpeed} />
           </Suspense>
         </Canvas>

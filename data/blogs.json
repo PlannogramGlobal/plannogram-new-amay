@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "blogs": [
+    {
+      "id": "inclusive-streets",
+      "title": "Inclusive streets, safer neighbourhoods",
+      "excerpt": "How small design shifts reshape mobility and trust in dense urban cores.",
+      "date": "Mar 12, 2026",
+      "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Blog",
+      "readMinutes": 6,
+      "heroCaption": null,
+      "intro": "How small design shifts reshape mobility and trust in dense urban cores.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": [
+            "How small design shifts reshape mobility and trust in dense urban cores. This piece expands on themes we’re tracking across cities and regions."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "All posts",
+          "href": "/blogs"
+        },
+        {
+          "label": "Initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "From the home page",
+          "href": "/"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "green-corridors",
+      "title": "Green corridors as city infrastructure",
+      "excerpt": "Linking ecology, heat resilience, and long-term planning decisions.",
+      "date": "Feb 28, 2026",
+      "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Blog",
+      "readMinutes": 6,
+      "heroCaption": null,
+      "intro": "Linking ecology, heat resilience, and long-term planning decisions.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": [
+            "Linking ecology, heat resilience, and long-term planning decisions. This piece expands on themes we’re tracking across cities and regions."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "All posts",
+          "href": "/blogs"
+        },
+        {
+          "label": "Initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "From the home page",
+          "href": "/"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "participatory-budgeting",
+      "title": "Participatory budgeting at scale",
+      "excerpt": "Lessons from cities that put residents in the room where priorities are set.",
+      "date": "Feb 2, 2026",
+      "image": "/uploads/blogs/af2ef364-3a5d-406b-9881-fd4f57cea167.png",
+      "gallery": [
+        "/uploads/blogs/48ca33c7-d213-443d-8ae7-e6bd494a1799.png",
+        "/uploads/blogs/4b8ffe1a-17f3-4372-9d28-c037f84a3fd7.jpg",
+        "/uploads/blogs/b04546c1-90b9-45f1-a671-f757ff3448d9.jpg"
+      ],
+      "category": "Blog",
+      "readMinutes": 6,
+      "heroCaption": null,
+      "intro": "Lessons from cities that put residents in the room where priorities are set.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": [
+            "Lessons from cities that put residents in the room where priorities are set. This piece expands on themes we’re tracking across cities and regions."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "All posts",
+          "href": "/blogs"
+        },
+        {
+          "label": "Initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "From the home page",
+          "href": "/"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "housing-and-equity",
+      "title": "Housing policy as equity policy",
+      "excerpt": "Why supply, tenure, and neighbourhood amenities have to move together.",
+      "date": "Jan 18, 2026",
+      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Blog",
+      "readMinutes": 6,
+      "heroCaption": null,
+      "intro": "Why supply, tenure, and neighbourhood amenities have to move together.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": [
+            "Why supply, tenure, and neighbourhood amenities have to move together. This piece expands on themes we’re tracking across cities and regions."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "All posts",
+          "href": "/blogs"
+        },
+        {
+          "label": "Initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "From the home page",
+          "href": "/"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "version": 1,
+  "initiatives": [
+    {
+      "id": "cities-climate",
+      "title": "Cities & Climate",
+      "excerpt": "Roundtables on resilient cities, adaptation finance, and how planners align long-term land use with a warming world.",
+      "date": "May 14, 2026 · online",
+      "image": "/uploads/initiatives/13019752-2f31-45f1-a9d3-8a5a2a0654f9.png",
+      "gallery": [
+        "/uploads/initiatives/6084faa7-cef2-463c-98f4-4967c8230213.png"
+      ],
+      "category": "Climate & land use",
+      "readMinutes": 8,
+      "heroCaption": {
+        "title": "Plannogram · Cities & Climate cohort",
+        "subtitle": "ADAPTATION · FINANCE · COMMUNITY VOICE"
+      },
+      "intro": "Cities & Climate is a leadership roundtable for people who translate global risk into local plans. We focus on flood and heat exposure, insurance and municipal finance, and the politics of where growth is allowed when the climate budget is tight.",
+      "sections": [
+        {
+          "heading": "What you can expect",
+          "paragraphs": [
+            "Sessions mix short provocations with structured dialogues. We compare instruments from different continents—green buffers, resilience bonds, overlay zones—without pretending one blueprint fits all.",
+            "Participants leave with shared vocabulary, a clearer read of trade-offs, and practical framing they can reuse in their own jurisdictions."
+          ]
+        },
+        {
+          "heading": "Who it is for",
+          "paragraphs": [
+            "Chief resilience officers, planning directors, housing leads, and researchers who work at the interface of land use and hazard data. Civil society partners join when the program is hybrid."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "regional-exchange",
+      "title": "Regional Exchange",
+      "excerpt": "Peer learning across regions and administrative scales—from metro governance to cross-border corridors.",
+      "date": "Ongoing · hybrid",
+      "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Regions & governance",
+      "readMinutes": 7,
+      "heroCaption": {
+        "title": "Regional Exchange · peer learning at every scale",
+        "subtitle": "METROS · PROVINCES · CROSS-BORDER"
+      },
+      "intro": "Regional Exchange connects teams who rarely sit in the same room: metropolitan authorities, provincial ministries, and cross-border corridor managers. The goal is reuse of ideas—without copying blueprints blindly.",
+      "sections": [
+        {
+          "heading": "How sessions run",
+          "paragraphs": [
+            "We alternate case walks with facilitated swaps. Each host city or region shares one implementation story; others pressure-test assumptions and translate lessons to their own administrative scale.",
+            "Formats include hybrid studios and short field visits when travel is possible."
+          ]
+        },
+        {
+          "heading": "Outcomes",
+          "paragraphs": [
+            "Documented “translation notes” capture what would have to change for an idea to work elsewhere—legal hooks, revenue tools, and community process—not just glossy summaries."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "policy-labs",
+      "title": "Policy Labs",
+      "excerpt": "Hands-on sessions on housing, equity, and implementation: from zoning reform to community agreements.",
+      "date": "July 22, 2026 · New Delhi",
+      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Housing & implementation",
+      "readMinutes": 9,
+      "heroCaption": {
+        "title": "Policy Labs · housing, equity, implementation",
+        "subtitle": "ZONING · FINANCE · AGREEMENTS"
+      },
+      "intro": "Policy Labs are hands-on working sessions on housing, equity, and delivery. Small groups pressure-test proposals—from zoning reform to agreements with residents—and document what would need to change back home.",
+      "sections": [
+        {
+          "heading": "Lab design",
+          "paragraphs": [
+            "We work with real drafts and real constraints: legal language, financing stacks, and political windows. Facilitators keep the room honest about what is negotiable and what is not."
+          ]
+        },
+        {
+          "heading": "Collaborations with practice",
+          "paragraphs": [
+            "Practitioners from multiple cities co-own the agenda. Outputs may include annotated code sections, term sheets for community benefits, or memoranda for elected leaders."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "urban-ideas-forum",
+      "title": "Urban Ideas Forum",
+      "excerpt": "International voices on the future of planning: technology, participation, and the politics of urban change.",
+      "date": "August 8, 2026 · online",
+      "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Ideas & futures",
+      "readMinutes": 6,
+      "heroCaption": null,
+      "intro": "The Urban Ideas Forum brings international voices on technology, participation, and the politics of urban change. Short provocations and breakouts are designed for practitioners who want signal—not slide clutter.",
+      "sections": [
+        {
+          "heading": "Program rhythm",
+          "paragraphs": [
+            "Each forum stacks three tightly timed provocations, then breaks into facilitated dialogue. Interpretation and async notes widen access across time zones."
+          ]
+        },
+        {
+          "heading": "Looking ahead",
+          "paragraphs": [
+            "Selected threads feed Plannogram’s written series and invite-back cohorts for deeper work on tools like digital twins, deliberative budgets, and public interest data governance."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "youth-planning",
+      "title": "Youth in Planning",
+      "excerpt": "Early-career voices in workshops and mentorship—linking schools, universities, and practice to long-range plans.",
+      "date": "Sep 2026 · hybrid",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Next generation",
+      "readMinutes": 7,
+      "heroCaption": null,
+      "intro": "Youth in Planning links schools, universities, and early-career practitioners to long-range plans. We pair mentorship with workshop formats that make formal planning legible without diluting complexity.",
+      "sections": [
+        {
+          "heading": "Workshop formats",
+          "paragraphs": [
+            "Role-play hearings, mapathons, and “explain this clause” sessions build literacy in zoning, transport, and climate overlays. Senior staff join as sounding boards, not lecturers."
+          ]
+        },
+        {
+          "heading": "Partnerships",
+          "paragraphs": [
+            "We work with faculties of architecture and planning, youth councils, and NGOs that run civic education programs. Outcomes include open curriculum snippets and student briefs for real consultations."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "streets-data",
+      "title": "Data for Streets",
+      "excerpt": "Open mobility and public-space metrics: cleaning, sharing, and using city data without drowning decision-makers.",
+      "date": "Quarterly · online",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Data & mobility",
+      "readMinutes": 8,
+      "heroCaption": null,
+      "intro": "Data for Streets supports teams cleaning, sharing, and using mobility and public-space metrics responsibly. The aim is decision-ready insight without burying communities in dashboards.",
+      "sections": [
+        {
+          "heading": "Technical and ethical guardrails",
+          "paragraphs": [
+            "We review lineage, privacy, and representativeness before metrics shape funding or enforcement. Where open data is patchy, we document uncertainty plainly."
+          ]
+        },
+        {
+          "heading": "Collaborations with agencies",
+          "paragraphs": [
+            "Quarterly online clinics pair city analysts with researchers on pedestrian counts, curb use, night-time economy patterns, and heat exposure along corridors."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "coastal-resilience",
+      "title": "Coastal Resilience Cohort",
+      "excerpt": "Small groups from delta and waterfront cities comparing adaptation finance, insurance, and managed retreat.",
+      "date": "Oct 2026 · rotating host",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Coasts & risk",
+      "readMinutes": 9,
+      "heroCaption": null,
+      "intro": "The Coastal Resilience Cohort convenes small groups from delta and waterfront cities. Topics include adaptation finance, insurance availability, managed retreat, and honest conversation about who bears loss.",
+      "sections": [
+        {
+          "heading": "Rotating host model",
+          "paragraphs": [
+            "Each cohort cycle visits a different coastline context—when feasible—so abstract principles meet maintenance yards, tide gates, and neighbourhood memory."
+          ]
+        },
+        {
+          "heading": "Looking ahead",
+          "paragraphs": [
+            "We produce comparative memos on instruments and governance—not prescriptive rankings—and help alumni cities find partners for joint funding proposals."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "night-economy",
+      "title": "Night Economy & Safety",
+      "excerpt": "Balancing culture, work, and security after dark—lighting, mobility, and governance across time zones.",
+      "date": "Nov 2026 · online",
+      "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Public life",
+      "readMinutes": 7,
+      "heroCaption": null,
+      "intro": "Night Economy & Safety explores culture, night-time work, and security after dark. Sessions connect lighting designers, mobility operators, business improvement areas, and residents’ associations.",
+      "sections": [
+        {
+          "heading": "Balancing priorities",
+          "paragraphs": [
+            "We map trade-offs between vibrancy, noise, and mobility access. Case studies cover licensing, late transit, and reclaiming streets for safe passage without defaulting to heavy policing narratives alone."
+          ]
+        },
+        {
+          "heading": "Toolkit sharing",
+          "paragraphs": [
+            "Participants share evaluation frameworks for pilots—what to measure, for whom, and on what timeline—so “success” is not only economic footfall."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "zoning-studio",
+      "title": "Zoning Reform Studio",
+      "excerpt": "Intensive sprints with lawyers and planners to draft readable codes that advance housing and climate goals.",
+      "date": "Jan 2027 · multi-city",
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Regulation & law",
+      "readMinutes": 10,
+      "heroCaption": null,
+      "intro": "The Zoning Reform Studio runs intensive sprints with planners and counsel to draft readable codes that advance housing supply and climate goals. Plain language and enforceability are non-negotiable.",
+      "sections": [
+        {
+          "heading": "Sprint structure",
+          "paragraphs": [
+            "Teams work from annotated prototypes, not blank pages. We time-box objections, test edge parcels, and check consistency with state or national frameworks."
+          ]
+        },
+        {
+          "heading": "Multi-city learning",
+          "paragraphs": [
+            "Studios rotate hosts so participants see different political constraints. Outputs include red-lined drafts and a short “adoption brief” for elected bodies."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "tod-growth",
+      "title": "Transit-Oriented Growth",
+      "excerpt": "Station-area intensity done responsibly: value capture, displacement risk, and rider-first street design.",
+      "date": "Rolling · hybrid",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Transit & intensity",
+      "readMinutes": 8,
+      "heroCaption": null,
+      "intro": "Transit-Oriented Growth examines station-area intensity with attention to value capture, displacement risk, and rider-first street design. We privilege riders and renters in the conversation—not only developers and consultants.",
+      "sections": [
+        {
+          "heading": "Case-based modules",
+          "paragraphs": [
+            "Modules compare inclusionary instruments, land assembly, and first/last mile treatments. Each ends with a risk register communities can stress-test locally."
+          ]
+        },
+        {
+          "heading": "Rolling enrollment",
+          "paragraphs": [
+            "Because projects move at different speeds, the track accepts cohort upgrades quarterly with hybrid participation."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "indigenous-partnership",
+      "title": "Indigenous Partnership Forum",
+      "excerpt": "Nation-to-municipal dialogues on land, water, and consent in regional plans—by invitation and protocol.",
+      "date": "Mar 2027 · TBC",
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Partnership & protocol",
+      "readMinutes": 9,
+      "heroCaption": null,
+      "intro": "The Indigenous Partnership Forum supports nation-to-municipal dialogues on land, water, and consent within regional plans. Participation is by invitation and governed by host protocols.",
+      "sections": [
+        {
+          "heading": "Governance",
+          "paragraphs": [
+            "Chatham-style expectations, elder guidance, and closed documentation unless hosts choose otherwise. Plannogram provides facilitation capacity only where invited."
+          ]
+        },
+        {
+          "heading": "Outputs",
+          "paragraphs": [
+            "Where appropriate, public read-outs summarise direction of travel—not negotiation detail—and link to formal government-to-government channels."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "circular-cities",
+      "title": "Circular Cities Lab",
+      "excerpt": "Materials, waste, and energy loops at district scale pilots with utilities, makers, and neighbourhood stewards.",
+      "date": "Apr 2027 · lab format",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&auto=format&fit=crop",
+      "gallery": [],
+      "category": "Materials & systems",
+      "readMinutes": 8,
+      "heroCaption": null,
+      "intro": "The Circular Cities Lab pilots materials, waste, and energy loops at district scale with utilities, small manufacturers, and neighbourhood stewards. We favour measurable pilots over circular buzzwords.",
+      "sections": [
+        {
+          "heading": "Lab cadence",
+          "paragraphs": [
+            "Teams define system boundaries, baseline flows, and a single intervention window—then monitor for seasonality and behaviour change."
+          ]
+        },
+        {
+          "heading": "Open documentation",
+          "paragraphs": [
+            "Methods and anonymised metrics are published so other districts can replicate without paying for proprietary “playbooks.”"
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "hisham",
+      "title": "hisham",
+      "excerpt": "hisham cont",
+      "date": "24",
+      "image": "/uploads/initiatives/fb1e5f19-45a3-4e5a-b518-8a6a5e1825e3.png",
+      "gallery": [],
+      "category": "test",
+      "readMinutes": 8,
+      "heroCaption": {
+        "title": "asda",
+        "subtitle": "asdasdsadad"
+      },
+      "intro": "asdawdqwad",
+      "sections": [],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "amay",
+      "title": "amay",
+      "excerpt": "asdad",
+      "date": "adsad",
+      "image": "/uploads/initiatives/c97cf253-9001-4d4f-9e88-28cc6e57b2ec.png",
+      "gallery": [],
+      "category": "asdasadadads",
+      "readMinutes": 8,
+      "heroCaption": {
+        "title": "asdasd",
+        "subtitle": "adsad"
+      },
+      "intro": "asdaadasd",
+      "sections": [],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "amaasd",
+      "title": "asdasd",
+      "excerpt": "adad",
+      "date": "asdad",
+      "image": "/uploads/initiatives/b7e65e40-f014-41ef-826e-a579929b3f63.png",
+      "gallery": [],
+      "category": "ad",
+      "readMinutes": 8,
+      "heroCaption": {
+        "title": "adadadas",
+        "subtitle": "adada"
+      },
+      "intro": "adadadsadadqdewn asdasdasdadqwda",
+      "sections": [],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    },
+    {
+      "id": "toot",
+      "title": "asdadssa",
+      "excerpt": "asdasad",
+      "date": "asdadas",
+      "image": "/uploads/initiatives/9fb125ac-c742-41c1-b075-6db2995fd86f.png",
+      "gallery": [],
+      "category": "asda",
+      "readMinutes": 8,
+      "heroCaption": {
+        "title": "asdad",
+        "subtitle": "asdaa"
+      },
+      "intro": "asdaddad",
+      "sections": [],
+      "ctas": [
+        {
+          "label": "Browse all initiatives",
+          "href": "/initiatives"
+        },
+        {
+          "label": "Upcoming events",
+          "href": "/#upcoming-events"
+        },
+        {
+          "label": "From the blog",
+          "href": "/blogs"
+        },
+        {
+          "label": "About Plannogram",
+          "href": "/about"
+        }
+      ]
+    }
+  ]
+}

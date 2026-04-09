@@ -44,14 +44,26 @@ export interface CircularTestimonialsProps {
 }
 
 function calculateGap(width: number) {
-  const minWidth = 1024
-  const maxWidth = 1456
-  const minGap = 68
-  const maxGap = 98
-  if (width <= minWidth) return minGap
-  if (width >= maxWidth)
-    return Math.max(minGap, maxGap + 0.06018 * (width - maxWidth))
-  return minGap + (maxGap - minGap) * ((width - minWidth) / (maxWidth - minWidth))
+  const desktopMin = 1024
+  const desktopMax = 1456
+  const gapAtDesktopMin = 68
+  const gapAtDesktopMax = 98
+
+  if (width < desktopMin) {
+    const w = Math.max(260, width)
+    return Math.round(16 + (w / desktopMin) * (gapAtDesktopMin - 20))
+  }
+  if (width >= desktopMax) {
+    return Math.max(
+      gapAtDesktopMin,
+      gapAtDesktopMax + 0.06018 * (width - desktopMax),
+    )
+  }
+  return (
+    gapAtDesktopMin +
+    (gapAtDesktopMax - gapAtDesktopMin) *
+      ((width - desktopMin) / (desktopMax - desktopMin))
+  )
 }
 
 export function CircularTestimonials({
@@ -140,7 +152,9 @@ export function CircularTestimonials({
 
   function getImageStyle(index: number): CSSProperties {
     const gap = calculateGap(containerWidth)
-    const maxStickUp = gap * 0.8
+    const maxStickUp = gap * 0.75
+    const sideScale =
+      containerWidth < 480 ? 0.74 : containerWidth < 768 ? 0.8 : 0.85
     const isActive = index === activeIndex
     const isLeft =
       (activeIndex - 1 + testimonialsLength) % testimonialsLength === index
@@ -160,7 +174,7 @@ export function CircularTestimonials({
         zIndex: 2,
         opacity: 1,
         pointerEvents: "auto",
-        transform: `translateX(-${gap}px) translateY(-${maxStickUp}px) scale(0.85) rotateY(15deg)`,
+        transform: `translateX(-${gap}px) translateY(-${maxStickUp}px) scale(${sideScale}) rotateY(15deg)`,
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       }
     }
@@ -169,7 +183,7 @@ export function CircularTestimonials({
         zIndex: 2,
         opacity: 1,
         pointerEvents: "auto",
-        transform: `translateX(${gap}px) translateY(-${maxStickUp}px) scale(0.85) rotateY(-15deg)`,
+        transform: `translateX(${gap}px) translateY(-${maxStickUp}px) scale(${sideScale}) rotateY(-15deg)`,
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       }
     }
@@ -190,11 +204,16 @@ export function CircularTestimonials({
   if (testimonialsLength === 0) return null
 
   return (
-    <div className={cn("w-full max-w-4xl px-4 py-6 md:max-w-[56rem] md:px-8", className)}>
-      <div className="grid gap-14 md:grid-cols-2 md:items-stretch md:gap-x-20 md:gap-y-0 lg:gap-x-28 xl:gap-x-32">
+    <div
+      className={cn(
+        "w-full max-w-4xl overflow-x-hidden px-3 py-4 sm:px-4 md:max-w-[56rem] md:px-8 md:py-6",
+        className,
+      )}
+    >
+      <div className="grid gap-8 md:grid-cols-2 md:items-stretch md:gap-x-20 md:gap-y-0 lg:gap-x-28 xl:gap-x-32">
         <div
           ref={imageContainerRef}
-          className="relative h-[22rem] w-full [perspective:1000px] sm:h-96 md:h-[26rem] lg:h-[30rem] xl:h-[32rem]"
+          className="relative mx-auto w-full max-w-[min(100%,20rem)] [perspective:1000px] sm:max-w-none sm:mx-0 h-56 sm:h-64 md:h-[26rem] md:max-w-none lg:h-[30rem] xl:h-[32rem]"
         >
           {testimonials.map((testimonial, index) => (
             // eslint-disable-next-line @next/next/no-img-element
@@ -210,7 +229,7 @@ export function CircularTestimonials({
 
         <div
           className={cn(
-            "flex min-h-0 flex-col md:min-h-[26rem] lg:min-h-[30rem] xl:min-h-[32rem]",
+            "flex min-h-0 flex-col sm:min-h-[16rem] md:min-h-[26rem] lg:min-h-[30rem] xl:min-h-[32rem]",
           )}
         >
           <AnimatePresence mode="wait">
@@ -261,12 +280,12 @@ export function CircularTestimonials({
             </motion.div>
           </AnimatePresence>
 
-          <div className="min-h-10 flex-1 md:min-h-12" aria-hidden />
+          <div className="min-h-4 flex-1 sm:min-h-10 md:min-h-12" aria-hidden />
 
-          <div className="flex gap-6 pt-10 md:pt-14 lg:pt-16">
+          <div className="flex gap-4 pt-6 md:gap-6 md:pt-14 lg:pt-16">
             <button
               type="button"
-              className="flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-full border-0 transition-colors duration-300 md:size-12"
+              className="flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full border-0 transition-colors duration-300 md:size-12"
               style={{
                 backgroundColor: hoverPrev ? colorArrowHoverBg : colorArrowBg,
               }}
@@ -275,11 +294,11 @@ export function CircularTestimonials({
               onMouseLeave={() => setHoverPrev(false)}
               aria-label="Previous"
             >
-              <ChevronLeft className="size-7" style={{ color: colorArrowFg }} strokeWidth={2} />
+              <ChevronLeft className="size-6 md:size-7" style={{ color: colorArrowFg }} strokeWidth={2} />
             </button>
             <button
               type="button"
-              className="flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-full border-0 transition-colors duration-300 md:size-12"
+              className="flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full border-0 transition-colors duration-300 md:size-12"
               style={{
                 backgroundColor: hoverNext ? colorArrowHoverBg : colorArrowBg,
               }}
@@ -288,7 +307,7 @@ export function CircularTestimonials({
               onMouseLeave={() => setHoverNext(false)}
               aria-label="Next"
             >
-              <ChevronRight className="size-7" style={{ color: colorArrowFg }} strokeWidth={2} />
+              <ChevronRight className="size-6 md:size-7" style={{ color: colorArrowFg }} strokeWidth={2} />
             </button>
           </div>
         </div>

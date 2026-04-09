@@ -1,7 +1,10 @@
 "use client"
 
+import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { useEffect, useState } from "react"
 
 import { cn } from "@/lib/utils"
 
@@ -65,11 +68,35 @@ const social = [
 const navLinkClass =
   "rounded-full px-3 py-1.5 text-[0.8125rem] font-medium tracking-tight text-white/82 transition-colors duration-200 hover:bg-white/[0.12] hover:text-white sm:px-3.5 sm:text-sm"
 
+const mobileNavLinkClass =
+  "block w-full rounded-xl px-4 py-3.5 text-base font-medium tracking-tight text-white no-underline transition-colors hover:bg-white/[0.08] active:bg-white/[0.12]"
+
 export type SiteHeaderProps = {
   className?: string
 }
 
 export function SiteHeader({ className }: SiteHeaderProps) {
+  const pathname = usePathname()
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  useEffect(() => {
+    setMobileOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
+    if (!mobileOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false)
+    }
+    window.addEventListener("keydown", onKey)
+    const prev = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      window.removeEventListener("keydown", onKey)
+      document.body.style.overflow = prev
+    }
+  }, [mobileOpen])
+
   return (
     <div
       className={cn(
@@ -99,20 +126,21 @@ export function SiteHeader({ className }: SiteHeaderProps) {
 
         <Link
           href="/"
-          className="relative z-[1] shrink-0 opacity-95 transition-opacity duration-200 hover:opacity-100"
+          className="relative z-[1] min-w-0 shrink-0 opacity-95 transition-opacity duration-200 hover:opacity-100"
+          onClick={() => setMobileOpen(false)}
         >
           <Image
             src="/plannogram-logo.png"
             alt="Plannogram"
             width={320}
             height={70}
-            className="h-7 w-auto max-w-[min(42vw,168px)] object-contain object-left sm:h-8 sm:max-w-[200px] md:h-9 md:max-w-[240px]"
+            className="h-7 w-auto max-w-[min(52vw,200px)] object-contain object-left sm:h-8 sm:max-w-[200px] md:h-9 md:max-w-[240px]"
             priority
           />
         </Link>
 
         <nav
-          className="relative z-[1] ml-auto flex min-w-0 items-center justify-end gap-1 sm:gap-1.5 md:gap-2"
+          className="relative z-[1] ml-auto hidden min-w-0 items-center justify-end gap-1 sm:gap-1.5 md:flex md:gap-2"
           aria-label="Main"
         >
           <Link href="/blogs" className={navLinkClass}>
@@ -149,7 +177,99 @@ export function SiteHeader({ className }: SiteHeaderProps) {
             ))}
           </div>
         </nav>
+
+        <button
+          type="button"
+          className="relative z-[2] ml-auto flex size-10 shrink-0 items-center justify-center rounded-full border border-white/[0.14] bg-black/30 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] backdrop-blur-md transition-colors hover:bg-white/[0.12] md:hidden"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-site-nav"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          onClick={() => setMobileOpen((o) => !o)}
+        >
+          {mobileOpen ? (
+            <X className="size-5" strokeWidth={2} aria-hidden />
+          ) : (
+            <Menu className="size-5" strokeWidth={2} aria-hidden />
+          )}
+        </button>
       </header>
+
+      {mobileOpen ? (
+        <div className="pointer-events-auto fixed inset-0 z-[90] md:hidden">
+          <button
+            type="button"
+            className="absolute inset-0 bg-black/55 backdrop-blur-sm"
+            aria-label="Close menu"
+            onClick={() => setMobileOpen(false)}
+          />
+          <div
+            id="mobile-site-nav"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
+            className={cn(
+              "absolute right-3 top-[4.25rem] w-[min(calc(100vw-1.5rem),20rem)] overflow-hidden rounded-2xl border border-white/[0.14]",
+              "bg-zinc-950/95 shadow-[0_24px_80px_-20px_rgba(0,0,0,0.85)] backdrop-blur-xl",
+            )}
+          >
+            <nav
+              className="flex flex-col p-2"
+              aria-label="Main mobile"
+            >
+              <Link
+                href="/blogs"
+                className={mobileNavLinkClass}
+                onClick={() => setMobileOpen(false)}
+              >
+                Blogs
+              </Link>
+              <Link
+                href="/initiatives"
+                className={mobileNavLinkClass}
+                onClick={() => setMobileOpen(false)}
+              >
+                Initiatives
+              </Link>
+              <Link
+                href="/about"
+                className={mobileNavLinkClass}
+                onClick={() => setMobileOpen(false)}
+              >
+                About Us
+              </Link>
+              <Link
+                href="/"
+                className={cn(mobileNavLinkClass, "text-white/75")}
+                onClick={() => setMobileOpen(false)}
+              >
+                Home
+              </Link>
+            </nav>
+            <div className="border-t border-white/[0.1] px-4 pb-4 pt-3">
+              <p className="mb-2 text-[0.6875rem] font-semibold uppercase tracking-wide text-white/45">
+                Follow
+              </p>
+              <div className="flex items-center gap-2">
+                {social.map(({ name, href, Icon }) => (
+                  <a
+                    key={name}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      "flex size-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-white/85",
+                      "transition-colors hover:bg-white/[0.14] hover:text-white",
+                    )}
+                    aria-label={name}
+                  >
+                    <Icon />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   )
 }
